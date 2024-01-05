@@ -25,15 +25,17 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
-.button-cancel{
-    color: var(--ion-color-primary);
-}
-
-.save-button{
+.button-cancel .alert-button-inner {
     color: var(--ion-color-secondary);
 }
 
-.operation-conf{
+.button-save .alert-button-inner {
+    color: var(--ion-color-primary);
+    // background: var(--ion-color-secondary);
+    // border-radius: 10%;
+}
+
+.operation-conf {
     // height: 80%;
     // top: 56%;
     position: absolute;

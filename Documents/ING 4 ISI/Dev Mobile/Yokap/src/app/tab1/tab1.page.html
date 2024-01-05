@@ -1,3 +1,4 @@
+
 <ion-header class="ion-no-border">
   <ion-toolbar color="secondary">
     <ion-title mode="md" class="ion-no-padding">
@@ -17,10 +18,10 @@
     <div align="center">
       <ion-label>
         <span>Solde Total</span>
-        <p class="acc-amt"><ion-text *ngIf="total">{{total}}</ion-text>
+        <p class="acc-amt" *ngIf="total"><ion-text>{{total}}</ion-text>
           <br><ion-text>FCFA</ion-text>
         </p>
-        <span>Numéro de compte</span>
+        <!-- <span>Numéro de compte</span> -->
       </ion-label>
     </div>
   </ion-row>
@@ -30,16 +31,16 @@
     </ion-list-header>
     <ion-row>
       <ion-segment mode="ios" [value]="segmentValue" (ionChange)=segmentChanged()>
-        <ion-segment-button value="in">
+        <ion-segment-button>
           <ion-label>Entrée</ion-label>
         </ion-segment-button>
-        <ion-segment-button value="out">
+        <ion-segment-button>
           <ion-label>Sortie</ion-label>
         </ion-segment-button>
-        <ion-segment-button value="in">
+        <ion-segment-button>
           <ion-label>Prêt</ion-label>
         </ion-segment-button>
-        <ion-segment-button value="in">
+        <ion-segment-button>
           <ion-label>Crédit</ion-label>
         </ion-segment-button>
       </ion-segment>

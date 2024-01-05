@@ -35,7 +35,7 @@ export class WelcomePage implements OnInit {
         },
         {
           text: 'Enregistrer',
-          cssClass: 'save-button',
+          cssClass: 'button-save',
           handler: (data) => {
             if (data.username) {
               this.saveUser(data.username);
@@ -53,10 +53,4 @@ export class WelcomePage implements OnInit {
     console.log(username);
   }
 
-  // redirectToHomePage(){
-  //   this.router.navigate(['./tabs/tab1']);
-  // }
-  // this.storage.set('username', username).then(() => {
-  //   this.router.navigate(['/tabs/tab1']);
-  // });
 }
